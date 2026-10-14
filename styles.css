@@ -1,0 +1,49 @@
+/* Mô hình hộp toàn trang Mục 3.8.4 giáo trình */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Phông chữ an toàn Mục 3.10.1 */
+  overflow-x: hidden;
+}
+
+/* Hiệu ứng chuyển tiếp bóng đổ Mục 3.27.1 */
+.card {
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Khối hiển thị tên bốc thăm */
+#ketqua {
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Canh giữa ô trong bảng Mục 3.13 */
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+/* Cỡ chữ badge thống kê */
+#hopthongke .badge {
+  font-size: 14px;
+}
+.banner {
+  min-height: 460px;
+  /* Đường dẫn tới file ảnh trong máy */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/anhutb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
