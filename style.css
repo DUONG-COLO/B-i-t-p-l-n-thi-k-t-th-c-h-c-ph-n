@@ -1,0 +1,16 @@
+/* Chỉnh nhẹ các thành phần tương tác */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+#randomResult {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
